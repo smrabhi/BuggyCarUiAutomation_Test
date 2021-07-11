@@ -94,7 +94,7 @@ namespace BuggyCarsUiAutomation.Page
         public void VerifyLoginPage()
         {
             //IWebElement profile1 = wait.Until(e => e.profile.Displayed));
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             Assert.That(profile.Displayed, Is.True, "Correct input, can login");
 
         }
