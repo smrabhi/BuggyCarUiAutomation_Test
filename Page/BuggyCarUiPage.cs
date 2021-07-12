@@ -24,7 +24,7 @@ namespace BuggyCarsUiAutomation.Page
 
         IWebElement buttonLogout => _driver.FindElementByPartialLinkText("Logout");
 
-        IWebElement profile => _driver.FindElementByXPath("//a[contains(@href,'/profile')]");
+        IWebElement profile => _driver.FindElementByXPath("//a[contains(text(), 'Profile') and @class='nav-link']");//("//a[contains(@href,'/profile')]");
 
         IWebElement profilePageBasic => _driver.FindElementByXPath("//h3[contains(., 'Basic')]");
 
